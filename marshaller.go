@@ -6,7 +6,7 @@ type MarshallerProtobuf interface {
 	SizeProtobuf() (size int)
 }
 
-// MarshallerProtobuf interface wraps the MarshalProtobuf and SizeProtobuf
+// MarshallerTypedProtobuf interface wraps the MarshalProtobuf and SizeProtobuf
 // methods. It is intended for use with DTS.
 type MarshallerTypedProtobuf interface {
 	MarshalTypedProtobuf(bs []byte) (n int)

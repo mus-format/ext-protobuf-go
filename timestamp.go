@@ -7,11 +7,11 @@ type Timestamp struct {
 	Nanos   int32
 }
 
-var TimestampProtobuf = timestampProtobuf{}
+var TimestampSer = timestampSer{}
 
-type timestampProtobuf struct{}
+type timestampSer struct{}
 
-func (s timestampProtobuf) Marshal(tm Timestamp, bs []byte) (n int) {
+func (s timestampSer) Marshal(tm Timestamp, bs []byte) (n int) {
 	size := s.size(tm)
 	n += varint.PositiveInt.Marshal(size, bs)
 	if tm.Seconds != 0 {
@@ -25,7 +25,7 @@ func (s timestampProtobuf) Marshal(tm Timestamp, bs []byte) (n int) {
 	return
 }
 
-func (s timestampProtobuf) Unmarshal(bs []byte) (tm Timestamp, n int, err error) {
+func (s timestampSer) Unmarshal(bs []byte) (tm Timestamp, n int, err error) {
 	size, n, err := varint.PositiveInt.Unmarshal(bs)
 	if err != nil {
 		return
@@ -54,12 +54,12 @@ func (s timestampProtobuf) Unmarshal(bs []byte) (tm Timestamp, n int, err error)
 	return
 }
 
-func (s timestampProtobuf) Size(tm Timestamp) (size int) {
+func (s timestampSer) Size(tm Timestamp) (size int) {
 	size = s.size(tm)
 	return size + varint.PositiveInt.Size(size)
 }
 
-func (s timestampProtobuf) Skip(bs []byte) (n int, err error) {
+func (s timestampSer) Skip(bs []byte) (n int, err error) {
 	size, n, err := varint.PositiveInt.Unmarshal(bs)
 	if err != nil {
 		return
@@ -88,7 +88,7 @@ func (s timestampProtobuf) Skip(bs []byte) (n int, err error) {
 	return
 }
 
-func (s timestampProtobuf) size(tm Timestamp) (size int) {
+func (s timestampSer) size(tm Timestamp) (size int) {
 	if tm.Seconds != 0 {
 		size += varint.Uint64.Size(secondsFieldTag)
 		size += varint.PositiveInt64.Size(tm.Seconds)

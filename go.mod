@@ -8,7 +8,4 @@ require (
 	google.golang.org/protobuf v1.36.6
 )
 
-require (
-	github.com/ymz-ncnk/mok v0.2.1 // indirect
-	golang.org/x/exp v0.0.0-20230425010034-47ecfdc1ba53 // indirect
-)
+require golang.org/x/exp v0.0.0-20230425010034-47ecfdc1ba53 // indirect

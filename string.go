@@ -14,14 +14,14 @@ var (
 	StringUnsafe = unsafe.NewStringSer(strops.WithLenSer(LenSer))
 )
 
-// NewValidStringProtobuf returns a new valid string serializer.
-func NewValidStringProtobuf(ops ...strops.SetOption) mus.Serializer[string] {
+// NewValidStringSer returns a new valid string serializer.
+func NewValidStringSer(ops ...strops.SetOption) mus.Serializer[string] {
 	ops = append(ops, strops.WithLenSer(LenSer))
 	return ord.NewValidStringSer(ops...)
 }
 
-// NewValidStringUnsafeProtobuf returns a new valid string serializer.
-func NewValidStringUnsafeProtobuf(ops ...strops.SetOption) mus.Serializer[string] {
+// NewValidStringUnsafeSer returns a new valid string serializer.
+func NewValidStringUnsafeSer(ops ...strops.SetOption) mus.Serializer[string] {
 	ops = append(ops, strops.WithLenSer(LenSer))
 	return unsafe.NewValidStringSer(ops...)
 }
