@@ -1,9 +1,9 @@
 github.com/google/go-cmp v0.5.8 h1:e6P7q2lk1O+qJJb4BtCQXlK8vWEO8V1ZeuEdJNOqZyg=
 github.com/google/go-cmp v0.5.8/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/mus-format/common-go v0.0.0-20260225152706-590b1bf7cb37 h1:d8d/XP3jBr8lC//l9MpIQ9jCzr49Hq6X65AH1FYk+TA=
-github.com/mus-format/common-go v0.0.0-20260225152706-590b1bf7cb37/go.mod h1:G4cssLSCvTjdGear9Svw8tLTqvUFv47uOpa7VQJYsNs=
-github.com/mus-format/mus-go v0.8.0 h1:N9pCcrdbFJLP9ZGWX+xxRay4RkH2bYF3/7xiaXHUg10=
-github.com/mus-format/mus-go v0.8.0/go.mod h1:qllF5YtnEmexO+STqVAdoPuXGsxEIcrWb/+RJ3xF/e8=
+github.com/mus-format/common-go v0.0.0-20260324174526-3d8f1741b5a2 h1:oob6maWbVV+yevC1EawGOSyqcU2Cvj3ZWAF0FKoT+uU=
+github.com/mus-format/common-go v0.0.0-20260324174526-3d8f1741b5a2/go.mod h1:XhSTID+Ln32bHgJQjtizWsMFY219tfWa4sObJxHhATw=
+github.com/mus-format/mus-go v0.9.1 h1:zqrFpWn27TJC5cPk1D6Xo502IzgfLuKdgDcsZLp0NAE=
+github.com/mus-format/mus-go v0.9.1/go.mod h1:YUJGLqibVueaC8g0YTcsq6kXdtgdLxlyAUWoUmjRRe0=
 github.com/ymz-ncnk/assert v0.0.0-20260108210721-155bc9aa4282 h1:lU0oPVPOGW0BZwLwAqfSTh1yxhFbwXDv/UAYY54QTq0=
 github.com/ymz-ncnk/assert v0.0.0-20260108210721-155bc9aa4282/go.mod h1:+lSOTrCyOPuvc0xuvK4uKhgQ0Ar3U/HJPpJZg73kvgE=
 github.com/ymz-ncnk/mok v0.2.2 h1:MkHkli+n3Ci6Xla9e/6LApJZ6/XjLB6AB3IXDr9a7hk=
