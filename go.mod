@@ -6,7 +6,7 @@ toolchain go1.24.1
 
 require (
 	github.com/mus-format/common-go v0.0.0-20260324174526-3d8f1741b5a2
-	github.com/mus-format/mus-go v0.10.0
+	github.com/mus-format/mus-go v0.10.1
 	github.com/ymz-ncnk/mok v0.2.2
 	google.golang.org/protobuf v1.36.6
 )
